@@ -9,9 +9,9 @@ export default function Footer() {
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Left Section - Branding */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <h3 className="text-3xl font-bold text-black mb-2 font-serif">Nature Cascade</h3>{" "}
+          <h3 className="text-3xl font-bold text-black mb-2 font-serif">Nature Crusade</h3>{" "}
           {/* Changed to text-black */}
-          <p className="text-gray-700 mb-6 text-lg font-serif">Your Roots. Our Revolution.</p>{" "}
+          <p className="text-gray-700 mb-6 text-lg font-serif">Your Roots, Our Revolution.</p>{" "}
           {/* Changed to text-gray-700 */}
           <button className="bg-[#813706] text-white px-6 py-3 rounded-lg text-base font-semibold hover:bg-[#a55d2d] transition duration-300">
             Donate

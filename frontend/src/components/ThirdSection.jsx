@@ -5,7 +5,7 @@ export default function ThirdSection() {
     // Parent container: stacks vertically on mobile, horizontally on medium screens and up
     <div
       id="our-projects"
-      className="min-h-screen max-w-[1440px] mx-auto w-full flex flex-col md:flex-row"
+      className="md:min-h-screen mb- md:mb-0 max-w-[1440px] mx-auto w-full flex flex-col md:flex-row"
     >
       <Head>
         <title>Forest Tracker</title>
