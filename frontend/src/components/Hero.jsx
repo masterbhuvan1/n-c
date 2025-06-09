@@ -1,31 +1,69 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative h-fit bg-[#f9f9f9] md:h-screen w-full flex items-center justify-center py-5 md:py-0 mt-24 my-8 md:my-16 px-8 bg-cover bg-center bg-no-repeat
-        bg-[url('/Images/hbg1m.png')] md:bg-[url('/Images/hbg1.png')]"
+      className="relative w-full h-screen flex items-center justify-center mt-10 md:mt-28  my- md:my-16 px-8 bg-[#f9f9f9]"
     >
-      {/* Overlay to ensure text visibility */}
-      <div className="absolute inset-0 bg-[#f9f9f9] md:opacity-40 opacity-70"></div>
+      {/* Desktop Background Images */}
+      <div className="hidden md:flex absolute inset-0 w-full h-full z-0 justify-between items-end pointer-events-none">
+        {/* Left Tree Image */}
+        <div className="relative w-auto h-auto ml-[-240px]">
+          <Image
+            src="/Images/1.png"
+            alt="Tree Illustration"
+            width={580} // increased from 350
+            height={400} // increased from 500
+            className="object-contain "
+          />
+        </div>
 
-      <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2A5141] mb-4 drop-shadow-md">
-          YOUR ROOTS, OUR REVOLUTION.
+        {/* Right Deer Image */}
+        <div className="relative w-auto h-auto mr-[-200px]">
+          <Image
+            src="/Images/2.png"
+            alt="Deer Illustration"
+            width={720} // increased from 300
+            height={420} // increased from 300
+            className="object-contain"
+          />
+        </div>
+      </div>
+
+      {/* Mobile Background */}
+      {/* Mobile Background with Reduced Opacity */}
+      <div className="md:hidden absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-transparent opacity-10 z-10" />
+        <Image
+          src="/Images/1.png"
+          alt="Mobile Background"
+          fill
+          className="object-cover opacity-30"
+        />
+      </div>
+
+      {/* Center Content */}
+      <div className="relative z-10 justify-normal flex flex-col h-ful  items-center text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-[#141414] mb-4">
+          YOUR ROOTS. OUR REVOLUTION.
         </h1>
-        <p className="text-lg  sm:text-xl  lg:text-2xl text-black font-serif mb-6 leading-relaxed">
+
+        <p className="text-lg sm:text-xl lg:text-2xl text-[#141414] font-serif mb-4 leading-relaxed">
           “When The Last Tree Falls, We Won’t Just Lose Forests — We’ll Lose Ourselves.”
         </p>
-        <p className="text-md sm:text-lg   text-black font-serif mb-8 max-w-2xl">
-          Join Nature Crusade – a women-led afforestation movement for a greener future.
+
+        <p className="text-md sm:text-lg text-[#141414] font-serif mb-8 max-w-2xl">
+          join nature crusade – a women-led afforestation movement for a greener future.
         </p>
+
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-[#D2E4D5] text-[#2A5141] px-8 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-[#c3d8c7] transition duration-300 border border-[#2A5141]"
+          className="bg-[#D5CCBB] bg-opacity-40 text-[#23553C] px-8 py-3 rounded-md text-lg font-serif font-semibold border border-[#23553C] hover:bg-[#e6e1d4] transition duration-300"
         >
           Join Our Mission
         </motion.button>

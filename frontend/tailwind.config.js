@@ -7,10 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        // Refer to the font-family names defined in @font-face rules
+        headings: ["Young Serif", "serif"], // 'Young Serif' must exactly match the font-family name
+        body: ["Sylfaen", "serif"], // 'Sylfaen' must exactly match the font-family name
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },

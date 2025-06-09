@@ -43,15 +43,15 @@ export default function Header() {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-8 font-body">
           {navLinks.map((link) => (
             <button
               key={link.href}
               onClick={() => scrollToSection(link.href)}
               className={`text-lg font-medium focus:outline-none ${
                 activeSection === link.href
-                  ? "text-green-700 border-b-2 border-green-700 pb-1"
-                  : "text-gray-700 hover:text-green-700"
+                  ? "text-[#23553C] border-b-2 border-[#23553C] pb-1" // Dark Green
+                  : "text-[#141414] hover:text-[#23553C]" // Black and Dark Green
               }`}
             >
               {link.label}
@@ -63,25 +63,25 @@ export default function Header() {
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-gray-700 hover:text-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 rounded-md p-2"
+            className="text-[#141414] hover:text-[#23553C] focus:outline-none focus:ring-2 focus:ring-[#23553C] rounded-md p-2" // Black, Dark Green, Dark Green ring
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <FaTimes className="h-6 w-6" /> : <FaBars className="h-6 w-6" />}
+            {isMenuOpen ? <FaTimes className="h-6 w-6" /> : <FaBars className="h-6 w-6}" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <nav className="md:hidden mt-4 space-y-4 text-center">
+        <nav className="md:hidden mt-4 space-y-4 text-center font-body">
           {navLinks.map((link) => (
             <button
               key={link.href}
               onClick={() => scrollToSection(link.href)}
               className={`block text-lg font-medium py-2 rounded-md focus:outline-none ${
                 activeSection === link.href
-                  ? "bg-green-100 text-green-700"
-                  : "text-gray-700 hover:bg-gray-50"
+                  ? "bg-[#D2E4D5] text-[#23553C]" // A light green was present as bg-green-100. Based on your other components, a common light green is D2E4D5 (from HeroSection button). Using that. Text is Dark Green.
+                  : "text-[#141414] hover:bg-gray-50" // Black text, kept hover:bg-gray-50 as no specific light gray hover was provided.
               }`}
             >
               {link.label}

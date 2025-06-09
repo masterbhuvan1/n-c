@@ -8,7 +8,7 @@ import ThirdSection from "../components/ThirdSection.jsx";
 
 export default function Home() {
   return (
-    <main className="flex bg-white min-h-screen flex-col items-center justify-between pb-10">
+    <main className="flex overflow-x-hidden bg-white min-h-screen flex-col items-center justify-between pb-10">
       <Header />
       <HeroWithScroll/>
       <SecondSection />
