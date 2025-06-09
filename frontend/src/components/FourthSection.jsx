@@ -49,8 +49,8 @@ export default function FourthSection() {
           </div>
 
           {/* Right Section - Contact Form */}
-          <div className="md:w-1/2  p-6 rounded-xl ">
-            <form className="space-y-5 font-body text-[#4B3D30]">
+          <div className="md:w-1/2    p-6 rounded-xl ">
+            <form className="space-y-5 font-body flex flex-col items-center justify-center  text-[#4B3D30]">
               {" "}
               {/* Uses font-body */}
               <input
@@ -79,7 +79,8 @@ export default function FourthSection() {
               ></textarea>
               <button
                 type="submit"
-                className="w-fit py-4 px-6 rounded-md text-white font-semibold bg-[#813706] hover:bg-[#a55d2d] transition-all duration-300"
+                className="w-fit py-4 px-6 min-w-[140px] rounded-md text-white font-semibold 
+                bg-[#813706] hover:bg-[#a55d2d] transition-all duration-300"
               >
                 Submit
               </button>
