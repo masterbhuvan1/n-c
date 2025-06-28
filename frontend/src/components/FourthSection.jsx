@@ -1,89 +1,84 @@
-// components/FourthSection.jsx
 "use client";
 
 export default function FourthSection() {
   return (
     <section
-      id="profile"
-      className="w-full 
- bg-[#D5CCBB] py-16 px-4 md:px-8 lg:px-12"
+      id="contact"
+      className="w-full bg-[#D5CCBB] py-16 px-4 md:px-8 lg:px-12 font-[Sylfaen,serif]"
     >
-      <div className="max-w-[1200px] mx-auto  rounded-3xl  p-6 md:p-12">
-        <h2 className="text-4xl md:text-5xl text-center font-headings font-bold text-[#813706] mb-12">
-          {" "}
-          {/* Uses font-headings */}
-          Reach Out To Us
+      <div className="max-w-[1200px] mx-auto">
+        {/* Heading */}
+        <h2 className="text-3xl md:text-5xl mb-6 text-center font-bold text-[#813706] md:mb-12">
+          JOIN THE CRUSADE
         </h2>
 
-        <div className="flex flex-col md:flex-row gap-12">
-          {/* Left Section - Contact Info */}
-          <div className="md:w-1/2 space-y-6 text-[#4B3D30] font-body">
-            {" "}
-            {/* Uses font-body */}
-            <p className="text-lg md:text-xl font-medium">Let’s Plant The Future Together.</p>
-            <div className="space-y-4 text-base md:text-lg leading-relaxed">
+        {/* Two Column Layout */}
+        <div className="flex flex-col md:flex-row gap-12 text-[#813706]">
+          {/* Left Side - Text Info */}
+          <div className="md:w-1/2 md:text-2xl leading-relaxed space-y-6">
+            <p>
+              Whether you're a Corporate, Government Body, Individual Or NGO, your support can help
+              reclaim barren lands, restore biodiversity and combat climate change.
+            </p>
+
+            <div className="space-y-5">
+              <div className="flex text-[#813706]">
+                <div className="font-semibold ">email:</div>
+                <div className="">
+                  <div className="ml-8 block">naturecrusade@gmail.com</div>
+                  <div className="ml-8 block">kapila@naturecrusade.com</div>
+                  <div className="ml-8 block">sweta@naturecrusade.com</div>
+                </div>
+              </div>
+
               <p>
-                <span className="font-semibold text-[#813706]">Email:</span>{" "}
-                <a
-                  href="mailto:naturecrusade@gmail.com"
-                  className="text-blue-800 underline hover:text-blue-900 transition-colors"
-                >
-                  naturecrusade@gmail.com
-                </a>
+                <span className="font-semibold text-[#813706]">address:</span>{" "}
+                <span className="ml-2">mumbai – 400007</span>
               </p>
+
               <p>
-                <span className="font-semibold text-[#813706]">Phone:</span>
-                <br />
-                Sweta: +91 88890 22277
-                <br />
-                Kapila: +91 98201 55156
-              </p>
-              <p>
-                <span className="font-semibold text-[#813706]">Address:</span> Mumbai – 400007
-              </p>
-              <p>
-                <span className="font-semibold text-[#813706]">Timing:</span> Mon–Sat | 8:30 AM –
-                2:30 PM
+                <span className="font-semibold text-[#813706]">timing:</span>{" "}
+                <span className="ml-2">mon–sat | 8:30 am – 2:30 pm</span>
               </p>
             </div>
           </div>
 
-          {/* Right Section - Contact Form */}
-          <div className="md:w-1/2    p-6 rounded-xl ">
-            <form className="space-y-5 font-body flex flex-col items-center justify-center  text-[#4B3D30]">
-              {" "}
-              {/* Uses font-body */}
+          {/* Right Side - Contact Form */}
+          <div className="md:w-1/2">
+            <form className="space-y-5 text-[#4B3D30]">
               <input
                 type="text"
                 name="name"
-                placeholder="Your Name"
-                className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#813706] placeholder-gray-500 transition"
+                placeholder="name"
+                className="w-full p-4 border border-gray-300 rounded-md text-[16px] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#813706] transition"
               />
               <input
                 type="email"
                 name="email"
-                placeholder="Your Email"
-                className="w-full text-black p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#813706] placeholder-gray-500 transition"
+                placeholder="email"
+                className="w-full p-4 border border-gray-300 rounded-md text-[16px] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#813706] transition"
               />
               <input
                 type="text"
                 name="number"
-                placeholder="Your Phone Number"
-                className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#813706] placeholder-gray-500 transition"
+                placeholder="number"
+                className="w-full p-4 border border-gray-300 rounded-md text-[16px] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#813706] transition"
               />
               <textarea
                 name="message"
                 rows={5}
-                placeholder="Type your message..."
-                className="w-full p-4 border border-gray-300 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-[#813706] placeholder-gray-500 transition"
+                placeholder="type here..."
+                className="w-full p-4 border border-gray-300 rounded-md text-[16px] placeholder-gray-500 resize-none focus:outline-none focus:ring-2 focus:ring-[#813706] transition"
               ></textarea>
-              <button
-                type="submit"
-                className="w-fit py-4 px-6 min-w-[140px] rounded-md text-white font-semibold 
-                bg-[#813706] hover:bg-[#a55d2d] transition-all duration-300"
-              >
-                Submit
-              </button>
+
+              <div className="flex md:w-min w-full justify-center ">
+                <button
+                  type="submit"
+                  className="py-3 px-8 bg-[#813706] text-white text-xl font-bold rounded-md hover:bg-[#a55d2d] transition-all duration-300"
+                >
+                  SUBMIT
+                </button>
+              </div>
             </form>
           </div>
         </div>

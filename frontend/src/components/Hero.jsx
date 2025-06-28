@@ -14,7 +14,8 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative w-full h-screen flex items-center justify-center mt-10 md:mt-24 px-8 bg-[#f9f9f9]"
+      className="relative w-full h-screen flex items-center 
+      justify-center md:mt-20 px-8 bg-[#f9f9f9]"
     >
       {/* Desktop Background Images */}
       <div className="hidden md:flex absolute inset-0 w-full h-full z-0 justify-between items-end pointer-events-none">
@@ -53,26 +54,35 @@ export default function HeroSection() {
       </div>
 
       {/* Center Content */}
-      <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-[#141414] mb-4">
-          YOUR ROOTS. OUR REVOLUTION.
+      <div className="relative gap-5 z-10 flex flex-col items-center text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1
+          style={{ fontFamily: "serif" }}
+          className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#1F4436] mb-4"
+        >
+          We are two mothers.
+          <br />
+          Not scientists.
+          <br />
+          Not activists.
         </h1>
-
-        <p className="text-lg sm:text-xl lg:text-2xl text-[#141414] font-serif mb-4 leading-relaxed">
-          “When The Last Tree Falls, We Won’t Just Lose Forests — We’ll Lose Ourselves.”
-        </p>
-
-        <p className="text-md sm:text-lg text-[#141414] font-serif mb-8 max-w-2xl">
-          join nature crusade – a women-led afforestation movement for a greener future.
-        </p>
-
+        <div>
+          <p
+          style={{ fontFamily: "Sylfaen" }}  
+            className="text-md mb-1 sm:text-lg text-[#141414] font-serif  max-w-2xl"
+          >
+            Just moms – who looked at their children and saw a<br />
+            future slipping away. So we planted a seed.
+          </p>
+          <p className="text-lg sm:text-xl   text-[#1F4436] mb-8">A SEED OF HOPE.</p>
+        </div>
         <motion.button
+          style={{ fontFamily: "serif" }}
           onClick={handleToggle}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="bg-[#D5CCBB] bg-opacity-40 text-[#23553C] px-8 py-3 rounded-md text-lg font-serif font-semibold border border-[#23553C] hover:bg-[#e6e1d4] transition duration-300"
         >
-          Join Our Mission
+          Join The Crusade
         </motion.button>
       </div>
     </section>
