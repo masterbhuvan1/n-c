@@ -39,7 +39,10 @@ export default function ApproachSection() {
           {" "}
           {/* Increased border width, more rounded, subtle translucent background */}
           {/* Heading */}
-          <h2 className="text-center text-4xl md:text-5xl font-bold rounded-2xl text-[#B35C1E] uppercase mb-12 tracking-wide">
+          <h2
+            style={{ fontFamily: "'Young Serif', serif" }}
+            className="text-center text-4xl md:text-5xl font-bold rounded-2xl text-[#B35C1E] uppercase mb-12 tracking-wide"
+          >
             {" "}
             {/* Adjusted tracking */}
             Our Approach
@@ -53,7 +56,7 @@ export default function ApproachSection() {
             rounded-2xl p-7 shadow-sm w-full "
               >
                 <h3
-                  style={{ fontFamily: "serif" }}
+                  style={{ fontFamily: "'Young Serif', serif" }}
                   className="text-3xl font-bold text-[#B35C1E] uppercase mb-2"
                 >
                   Miyawaki Method:
@@ -69,7 +72,7 @@ export default function ApproachSection() {
             rounded-2xl p-7 shadow-sm w-full "
               >
                 <h3
-                  style={{ fontFamily: "serif" }}
+                  style={{ fontFamily: "'Young Serif', serif" }}
                   className="text-3xl font-bold text-[#B35C1E] uppercase mb-2"
                 >
                   Geotagging:
@@ -87,7 +90,7 @@ export default function ApproachSection() {
             rounded-2xl p-7 shadow-sm w-full "
               >
                 <h3
-                  style={{ fontFamily: "serif" }}
+                  style={{ fontFamily: "'Young Serif', serif" }}
                   className="text-3xl font-bold text-[#B35C1E] uppercase mb-2"
                 >
                   Sustainability Focus:
@@ -103,7 +106,7 @@ export default function ApproachSection() {
             rounded-2xl p-7 shadow-sm w-full "
               >
                 <h3
-                  style={{ fontFamily: "serif" }}
+                  style={{ fontFamily: "'Young Serif', serif" }}
                   className="text-3xl font-bold text-[#B35C1E] uppercase mb-2"
                 >
                   CSR-Ready:

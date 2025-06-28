@@ -8,13 +8,18 @@ export default function SeventhSection() {
       <div className=" mx-auto max-w-[1200px]   flex flex-col lg:flex-row items-center gap-10">
         {/* Left - Heading */}
         <div className="lg:w-1/3 flex md:w-min w-full justify-center">
-          <div className="md:text-6xl hidden md:block text-3xl sm:text-5xl font-bold font-serif text-white mb-6">
+          <div
+            style={{ fontFamily: "'Young Serif', serif" }}
+            className="md:text-6xl hidden md:block text-3xl sm:text-5xl font-bold font-serif text-white mb-6"
+          >
             IMPACT <br />
             METRICS
           </div>
-          <div className=" md:hidden block text-3xl sm:text-5xl font-bold font-serif text-white mb-6">
-            IMPACT
-            METRICS
+          <div
+            style={{ fontFamily: "'Young Serif', serif" }}
+            className=" md:hidden block text-3xl sm:text-5xl font-bold font-serif text-white mb-6"
+          >
+            IMPACT METRICS
           </div>
         </div>
 

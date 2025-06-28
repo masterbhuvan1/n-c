@@ -8,7 +8,10 @@ export default function FourthSection() {
     >
       <div className="max-w-[1200px] mx-auto">
         {/* Heading */}
-        <h2 className="text-3xl md:text-5xl mb-6 text-center font-bold text-[#813706] md:mb-12">
+        <h2
+          style={{ fontFamily: "'Young Serif', serif" }}
+          className="text-3xl md:text-5xl mb-6 text-center font-bold text-[#813706] md:mb-12"
+        >
           JOIN THE CRUSADE
         </h2>
 

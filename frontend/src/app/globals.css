@@ -11,6 +11,11 @@
   font-style: normal;
   font-display: swap; /* Improves performance by displaying text with a fallback font first */
 }
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+.young-serif {
+  font-family: 'Young Serif', serif;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;

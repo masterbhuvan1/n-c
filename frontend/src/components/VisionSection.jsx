@@ -35,8 +35,8 @@ export default function VisionSection() {
         <div className="w-full flex items-start justify-start">
           <div className="max-w-[520px] h-full w-full flex flex-col justify-center items-start text-left">
             <h2
-              style={{ fontFamily: "serif" }}
-              className="text-4xl md:text-6xl font-bold text-black mb-4"
+              style={{ fontFamily: "'Young Serif', serif" }}
+              className="text-4xl young-serif md:text-6xl font-bold text-black mb-4"
             >
               Who Are We?
             </h2>
@@ -60,7 +60,7 @@ export default function VisionSection() {
         <div className="w-full flex items-start justify-start">
           <div className="max-w-[520px] h-full w-full flex flex-col justify-center items-start text-left">
             <h2
-              style={{ fontFamily: "serif" }}
+              style={{ fontFamily: "'Young Serif', serif" }}
               className="text-4xl md:text-6xl font-bold text-black mb-4 lowercase"
             >
               Our Vision

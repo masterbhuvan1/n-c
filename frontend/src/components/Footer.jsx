@@ -8,7 +8,12 @@ export default function Footer() {
         {/* Left Section - Branding */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           {/* Adjusted font-size and color for "Nature Crusade" to match image */}
-          <h3 className="text-4xl font-bold text-[#4F6C4C] mb-2 font-serif">Nature Crusade</h3>
+          <h3
+            style={{ fontFamily: "'Young Serif', serif" }}
+            className="text-4xl font-bold text-[#4F6C4C] mb-2 font-serif"
+          >
+            Nature Crusade
+          </h3>
           {/* Adjusted font-size and color for slogan to match image */}
           <p className="text-gray-700 mb-6 text-lg font-serif">Your Roots, Our Revolution.</p>
           {/* Changed button text and background color to match image */}

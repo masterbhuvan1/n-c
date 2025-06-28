@@ -56,7 +56,7 @@ export default function HeroSection() {
       {/* Center Content */}
       <div className="relative gap-5 z-10 flex flex-col items-center text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1
-          style={{ fontFamily: "serif" }}
+          style={{ fontFamily: "'Young Serif', serif" }}
           className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#1F4436] mb-4"
         >
           We are two mothers.
@@ -67,10 +67,17 @@ export default function HeroSection() {
         </h1>
         <div>
           <p
-          style={{ fontFamily: "Sylfaen" }}  
-            className="text-md mb-1 sm:text-lg text-[#141414] font-serif  max-w-2xl"
+            style={{ fontFamily: "Sylfaen" }}
+            className="text-md mb-1 hidden md:block sm:text-lg text-[#141414] font-serif  max-w-2xl"
           >
             Just moms – who looked at their children and saw a<br />
+            future slipping away. So we planted a seed.
+          </p>
+          <p
+            style={{ fontFamily: "Sylfaen" }}
+            className="text-md mb-1 block md:hidden sm:text-lg text-[#141414] font-serif  max-w-2xl"
+          >
+            Just moms – who looked at their children and saw a
             future slipping away. So we planted a seed.
           </p>
           <p className="text-lg sm:text-xl   text-[#1F4436] mb-8">A SEED OF HOPE.</p>
